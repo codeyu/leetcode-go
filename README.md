@@ -1,2 +1,2 @@
-# leetcode-go
+# leetcode
 Leetcode solutions in GO
