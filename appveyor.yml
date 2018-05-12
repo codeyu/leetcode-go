@@ -38,11 +38,10 @@ on_success:
   - git config --global core.autocrlf true
   - git clone "https://github.com/codeyu/leetcode-go.git" gh-pages
   - cd gh-pages
-  - ps: $message = git log -1 --pretty --oneline | Out-string
   - git checkout -b gh-pages
   - ps: if (-not $?) { throw "Cloning gh-pages failed" }
   - ps: Remove-Item * -Recurse
   - ps: Copy-Item ..\_dist\* . -Recurse
   - git add --all .
-  - git commit -m "$message"
+  - git commit -m "update book"
   - git push -f origin gh-pages
