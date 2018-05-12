@@ -35,9 +35,11 @@
         "sharing-plus",
         "sectionx-fork",
         "include-codeblock",
-        "ace"
+        "ace",
+        "custom-favicon"
     ],
     "pluginsConfig": {
+        "favicon": "images/favicon.ico",
         "include-codeblock": {
             "template": "ace" 
         },
